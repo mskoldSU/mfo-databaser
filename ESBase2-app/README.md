@@ -1,6 +1,6 @@
 # ESBase 2.0
 
-En enkel app för att demonstrera sökning, export och visa poster i ESBase fisk-katalog. Se till att nedanstående paket är installerade, öppna `app.R` i RStudio och kör med *Run app*.
+En enkel app för att demonstrera sökning, export och visa poster i ESBase fisk-katalog. Se till att nedanstående paket är installerade, öppna `app.R` i RStudio och kör med *Run app*. I `app_sqlite.R` finns en uppdaterad version som läser direkt från en SQLite-databas (som dock inte finns i repot då den kan innehålla känsliga uppgifter). För att istället läsa från ESBase/MySQL, byt anropet `DBI:dBConnect` till motsvarande för [`RMariaDB`](https://rmariadb.r-dbi.org/).
 
 ```
 install.packages(c("shiny", "shinydashboard", "DT", "leaflet", "tidyverse"))
